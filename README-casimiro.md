@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./banner.svg" alt="Casimiro Gundja — Desenvolvedor Full Stack Sênior">
+  <img src="./banner.svg" alt="Casimiro Gundja — Desenvolvedor Full Stack">
 </p>
 
 <p align="center">
@@ -11,7 +11,7 @@
 
 ## Sobre mim
 
-Sou **Desenvolvedor Full Stack Sênior**, com mais de **8 anos de experiência em tecnologia**. Atuo na criação, evolução e otimização de aplicações web, integrações entre sistemas e plataformas que apoiam processos de negócio reais.
+Sou **Desenvolvedor Full Stack**, com mais de **7 anos de experiência em tecnologia**. Atuo na criação, evolução e otimização de aplicações web, integrações entre sistemas e plataformas que apoiam processos de negócio reais.
 
 Minha base principal está no **backend com PHP**, especialmente em arquitetura de aplicações, APIs REST, manutenção de sistemas legados e boas práticas de desenvolvimento. Também trabalho diretamente com frontend, automações, observabilidade e entrega em produção quando o projeto exige uma visão end-to-end.
 
