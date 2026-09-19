@@ -1,0 +1,1140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Currículo - Casimiro Custódio Gundja</title>
+  <style>
+    @page {
+      size: A4 portrait;
+      margin: 8mm 10mm 8mm 10mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: #1e293b;
+      background-color: #ffffff;
+      font-size: 8.6pt;
+      line-height: 1.38;
+    }
+
+    /* LINKS EM AZUL */
+    a {
+      color: #0284c7;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      width: 100%;
+      height: 281mm; /* Altura exata para A4 com margens de 8mm */
+      box-sizing: border-box;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .page-break {
+      page-break-after: always;
+      break-after: page;
+    }
+
+    /* HEADER PAGE 1 */
+    .header-p1 {
+      border-bottom: 2.5px solid #0f172a;
+      padding-bottom: 7px;
+      margin-bottom: 9px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .header-main h1 {
+      font-size: 20pt;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: -0.5px;
+      line-height: 1.05;
+      text-transform: uppercase;
+    }
+
+    .header-main .title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #334155;
+      margin-top: 2.5px;
+      letter-spacing: 0.2px;
+    }
+
+    .header-main .subtitle {
+      font-size: 8.2pt;
+      color: #64748b;
+      margin-top: 2px;
+      font-weight: 500;
+    }
+
+    .header-contact {
+      text-align: right;
+      font-size: 7.8pt;
+      color: #334155;
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .header-contact .item {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 5px;
+    }
+
+    .header-contact svg {
+      width: 11px;
+      height: 11px;
+      fill: #0284c7;
+      flex-shrink: 0;
+    }
+
+    /* HEADER PAGE 2 */
+    .header-p2 {
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header-p2-left {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      white-space: nowrap;
+    }
+
+    .header-p2-title {
+      font-size: 10pt;
+      font-weight: 800;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+    }
+
+    .header-p2-sep {
+      color: #94a3b8;
+      font-weight: 700;
+    }
+
+    .header-p2-role {
+      font-size: 7.8pt;
+      color: #475569;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .header-p2-contact {
+      font-size: 7.1pt;
+      color: #475569;
+      display: flex;
+      gap: 5px;
+      white-space: nowrap;
+    }
+
+    /* GRID LAYOUT */
+    .container {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 13px;
+      flex: 1;
+    }
+
+    .main-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8.5px;
+    }
+
+    .side-col {
+      display: flex;
+      flex-direction: column;
+      gap: 8.5px;
+    }
+
+    /* SECTION TITLES */
+    .section-title {
+      font-size: 9.3pt;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: #0f172a;
+      border-bottom: 1.5px solid #cbd5e1;
+      padding-bottom: 2.5px;
+      margin-bottom: 6px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .section-title::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 11px;
+      background-color: #0f172a;
+      border-radius: 2px;
+    }
+
+    /* SUMMARY */
+    .summary-text {
+      text-align: justify;
+      color: #334155;
+      font-size: 8.4pt;
+      line-height: 1.4;
+    }
+
+    /* EXPERIENCES */
+    .experience-list {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+    }
+
+    .job-card {
+      page-break-inside: avoid;
+    }
+
+    .job-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 1px;
+    }
+
+    .job-role {
+      font-size: 9.1pt;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    .job-badge-promo {
+      font-size: 6.8pt;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      background: #0f172a;
+      color: #ffffff;
+      border: 1px solid #0f172a;
+      padding: 1px 5px;
+      border-radius: 3px;
+      margin-left: 5px;
+      vertical-align: middle;
+    }
+
+    .job-period {
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: #0f172a;
+      background: #f1f5f9;
+      padding: 1px 5px;
+      border-radius: 3px;
+      border: 1px solid #cbd5e1;
+    }
+
+    .job-company {
+      font-size: 8.1pt;
+      font-weight: 600;
+      color: #475569;
+      margin-bottom: 3px;
+    }
+
+    /* BULLET LIST */
+    .job-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+    }
+
+    .job-bullets li {
+      position: relative;
+      padding-left: 10px;
+      font-size: 8.2pt;
+      color: #334155;
+      line-height: 1.35;
+      text-align: justify;
+    }
+
+    .job-bullets li::before {
+      content: "▪";
+      position: absolute;
+      left: 0;
+      color: #0f172a;
+      font-size: 9pt;
+      line-height: 1.2;
+    }
+
+    /* STACK ROW */
+    .job-stack {
+      font-size: 7.4pt;
+      color: #334155;
+      background: #f8fafc;
+      border-left: 2.5px solid #0f172a;
+      padding: 2px 6px;
+      border-radius: 0 3px 3px 0;
+      margin-top: 3px;
+      font-weight: 500;
+      border-top: 1px solid #f1f5f9;
+      border-right: 1px solid #f1f5f9;
+      border-bottom: 1px solid #f1f5f9;
+    }
+
+    .job-stack strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+
+    /* TIMELINE EVOLUÇÃO DE CARREIRA */
+    .career-timeline {
+      position: relative;
+      margin-top: 5px;
+      padding-left: 15px;
+    }
+
+    .career-timeline::before {
+      content: "";
+      position: absolute;
+      left: 4px;
+      top: 6px;
+      bottom: 6px;
+      width: 2px;
+      background: #cbd5e1;
+    }
+
+    .timeline-step {
+      position: relative;
+    }
+
+    .timeline-step + .timeline-step {
+      margin-top: 8px;
+      padding-top: 2px;
+    }
+
+    .timeline-step::before {
+      content: "";
+      position: absolute;
+      left: -15px;
+      margin-left: 0.5px;
+      top: 3.5px;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #ffffff;
+      border: 2px solid #94a3b8;
+      box-sizing: border-box;
+    }
+
+    .timeline-step.active::before {
+      background: #0284c7;
+      border-color: #0284c7;
+      box-shadow: 0 0 0 2px #e0f2fe;
+    }
+
+    .timeline-step .job-role {
+      font-size: 8.8pt;
+    }
+
+    .promo-indicator {
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      font-size: 6.8pt;
+      font-weight: 700;
+      color: #0284c7;
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      padding: 0.5px 5px;
+      border-radius: 3px;
+      margin-left: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      vertical-align: middle;
+    }
+
+    /* SIDEBAR CARDS */
+    .side-block {
+      background: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 5px;
+      padding: 6.5px 8.5px;
+      page-break-inside: avoid;
+    }
+
+    .side-block .section-title {
+      font-size: 8.6pt;
+      margin-bottom: 5px;
+      padding-bottom: 2px;
+    }
+
+    /* HABILIDADES TÉCNICAS (ESTILO IDÊNTICO A CERTIFICAÇÕES) */
+    .skills-category-title {
+      font-size: 7.5pt;
+      font-weight: 800;
+      color: #0f172a;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-top: 5px;
+      margin-bottom: 3px;
+      padding-bottom: 1px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .skills-category-title:first-of-type {
+      margin-top: 0;
+    }
+
+    .skills-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+      margin-bottom: 4px;
+    }
+
+    .skills-list:last-child {
+      margin-bottom: 0;
+    }
+
+    .skill-item {
+      font-size: 7.7pt;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      padding: 1px 0;
+    }
+
+    .skill-item::before {
+      content: "▪";
+      color: #0284c7;
+      font-size: 7pt;
+      flex-shrink: 0;
+    }
+
+    .skill-name {
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    /* PROJECTS */
+    .project-card {
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      border-left: 3.5px solid #0f172a;
+      padding: 9px 12px;
+      border-radius: 4px;
+      margin-bottom: 11px;
+      page-break-inside: avoid;
+    }
+
+    .project-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .project-name {
+      font-weight: 700;
+      font-size: 9pt;
+      color: #0f172a;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    /* LINK EM AZUL NOS PROJETOS */
+    .project-url {
+      font-size: 7.4pt;
+      font-weight: 600;
+      color: #0284c7;
+      background: #f0f9ff;
+      border: 1px solid #bae6fd;
+      padding: 1.5px 6px;
+      border-radius: 3px;
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .project-url:hover {
+      background: #e0f2fe;
+      text-decoration: underline;
+    }
+
+    .project-tech {
+      font-size: 7.4pt;
+      color: #475569;
+      font-weight: 600;
+      margin-top: 2px;
+      margin-bottom: 4px;
+    }
+
+    .project-desc {
+      font-size: 8.2pt;
+      color: #334155;
+      margin-top: 2px;
+      line-height: 1.42;
+      text-align: justify;
+    }
+
+    .project-highlights {
+      list-style: none;
+      margin-top: 5px;
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .project-highlights li {
+      position: relative;
+      padding-left: 12px;
+      font-size: 8pt;
+      color: #334155;
+      line-height: 1.35;
+      text-align: justify;
+    }
+
+    .project-highlights li::before {
+      content: "▪";
+      position: absolute;
+      left: 0;
+      color: #0284c7;
+      font-size: 8.5pt;
+    }
+
+    .project-title-group {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+    }
+
+    .status-badge {
+      font-size: 6.6pt;
+      font-weight: 700;
+      padding: 1px 5px;
+      border-radius: 3px;
+      letter-spacing: 0.2px;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+
+    .status-active {
+      color: #0369a1;
+      background: #e0f2fe;
+      border: 1px solid #7dd3fc;
+    }
+
+    .status-done {
+      color: #475569;
+      background: #f1f5f9;
+      border: 1px solid #cbd5e1;
+    }
+
+    .project-card.project-ongoing {
+      border-left-color: #0284c7;
+      background: #f8fafc;
+    }
+
+    .projects-divider {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin: 10px 0 9px;
+      font-size: 7pt;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .projects-divider::before,
+    .projects-divider::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: #e2e8f0;
+    }
+
+    /* EDUCATION */
+    .edu-item {
+      margin-bottom: 6px;
+    }
+
+    .edu-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .edu-degree {
+      font-size: 8.3pt;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.2;
+    }
+
+    .edu-school {
+      font-size: 7.6pt;
+      color: #475569;
+      margin-top: 1px;
+    }
+
+    .edu-date {
+      font-size: 7.3pt;
+      color: #475569;
+      font-weight: 600;
+    }
+
+    /* CERTIFICATIONS */
+    .cert-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+    }
+
+    .cert-item {
+      font-size: 7.8pt;
+      color: #334155;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px dashed #cbd5e1;
+      padding-bottom: 3.5px;
+    }
+
+    .cert-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .cert-name {
+      font-weight: 600;
+      color: #1e293b;
+    }
+
+    .cert-year {
+      font-size: 7.3pt;
+      color: #64748b;
+    }
+
+    /* LANGUAGES */
+    .lang-item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 7.8pt;
+      margin-bottom: 3px;
+    }
+
+    .lang-item:last-child {
+      margin-bottom: 0;
+    }
+
+    .lang-name {
+      font-weight: 600;
+      color: #0f172a;
+    }
+
+    .lang-level {
+      color: #64748b;
+      font-weight: 500;
+    }
+
+    /* PRACTICES */
+    .practice-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .practice-item {
+      font-size: 7.7pt;
+      color: #334155;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .practice-bullet {
+      color: #0284c7;
+      font-weight: 800;
+      font-size: 8pt;
+    }
+
+    /* PILLS / HIGHLIGHTS */
+    .diff-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2.5px;
+    }
+
+    .diff-item {
+      font-size: 7.7pt;
+      color: #334155;
+      display: flex;
+      align-items: flex-start;
+      gap: 4px;
+    }
+
+    .diff-bullet {
+      color: #0f172a;
+      font-weight: 800;
+    }
+
+    .page-footer {
+      margin-top: auto;
+      padding-top: 5px;
+      border-top: 1px solid #cbd5e1;
+      font-size: 7.1pt;
+      color: #64748b;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==================== PÁGINA 1 ==================== -->
+  <div class="page page-break">
+    
+    <!-- HEADER -->
+    <header class="header-p1">
+      <div class="header-main">
+        <h1>Casimiro Custódio Gundja</h1>
+        <div class="title">Desenvolvedor Full Stack</div>
+        <div class="subtitle">7+ Anos de Experiência · Microsserviços, Arquitetura de APIs, Cloud & Sistemas Distribuídos Críticos</div>
+      </div>
+      <div class="header-contact">
+        <div class="item">
+          <span>Hortolândia - SP, Brasil</span>
+          <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+        </div>
+        <div class="item">
+          <a href="mailto:casimirogundja@outlook.com">casimirogundja@outlook.com</a>
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+        </div>
+        <div class="item">
+          <a href="https://wa.me/5519953248420">+55 (19) 95324-8420</a>
+          <svg viewBox="0 0 24 24"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+        </div>
+        <div class="item">
+          <a href="https://www.linkedin.com/in/casimiro-custodio-101770106/" target="_blank">linkedin.com/in/casimiro-custodio</a>
+          <svg viewBox="0 0 24 24"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/></svg>
+        </div>
+        <div class="item">
+          <a href="https://casigundja.github.io/" target="_blank">casigundja.github.io</a>
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+        </div>
+      </div>
+    </header>
+
+    <!-- GRID P1 -->
+    <div class="container">
+      
+      <!-- MAIN P1 -->
+      <main class="main-col">
+        
+        <!-- RESUMO -->
+        <section>
+          <h2 class="section-title">Resumo Executivo</h2>
+          <p class="summary-text">
+            Engenheiro de Software e Desenvolvedor Full Stack com <strong>mais de 7 anos de experiência</strong> projetando, implementando e sustentando plataformas corporativas de alta criticidade e volumetria. Atuação consolidada em plataformas logísticas e aduaneiras (RACHI), ecossistemas educacionais de larga escala (KLASSE, FAP) e ambiente industrial 4.0 (Greenbrier Maxion).
+          </p>
+        </section>
+
+        <!-- EXPERIÊNCIAS PRINCIPAIS -->
+        <section>
+          <h2 class="section-title">Experiência Profissional</h2>
+          <div class="experience-list">
+            
+            <!-- GRUPO ASSIST -->
+            <article class="job-card">
+              <div class="job-header">
+                <span class="job-role">Grupo Assist</span>
+                <span class="job-period">2025 — Atual</span>
+              </div>
+              <div class="job-company">Campinas - SP & Remoto</div>
+              
+              <!-- TIMELINE DE EVOLUÇÃO -->
+              <div class="career-timeline">
+                
+                <!-- CARGO ATUAL -->
+                <div class="timeline-step active">
+                  <div class="job-header">
+                    <div>
+                      <span class="job-role">Desenvolvedor Full Stack</span>
+                      <span class="promo-indicator">▲ Promoção Interna</span>
+                    </div>
+                    <span class="job-period" style="background:#0f172a; border-color:#0f172a; color:#ffffff;">Mai de 2026 — Atual</span>
+                  </div>
+                  <div style="font-size: 7.9pt; font-weight: 700; color: #0f172a; margin: 2px 0 2px;">
+                    Escopo & Foco: <span style="font-weight: 600; color: #334155;">Aplicações Web & Integrações Corporativas</span>
+                  </div>
+                  <ul class="job-bullets">
+                    <li>Desenvolvimento e sustentação de sistemas e aplicações web completas (Front-end e Back-end).</li>
+                    <li>Criação e consumo de APIs RESTful para integração de serviços, automação de processos, modelagem de bancos de dados, revisões de código (Code Review) e entregas com foco em performance e estabilidade.</li>
+                  </ul>
+                </div>
+
+                <!-- CARGO ANTERIOR -->
+                <div class="timeline-step">
+                  <div class="job-header">
+                    <div>
+                      <span class="job-role">Analista de Sistemas de TI</span>
+                      <span style="font-size: 7.1pt; color: #64748b; font-weight: 600; margin-left: 5px;">(Cargo Inicial)</span>
+                    </div>
+                    <span class="job-period">Jul de 2025 — Mai de 2026</span>
+                  </div>
+                  <ul class="job-bullets">
+                    <li>Sustentação de produtos, suporte técnico a incidentes e dúvidas de usuários, elaboração de treinamentos e registro de melhorias contínuas no backlog de desenvolvimento.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </article>
+
+            <!-- BRAGA SOLUÇÕES EM TI -->
+            <article class="job-card">
+              <div class="job-header">
+                <span class="job-role">Analista de Sistemas de TI</span>
+                <span class="job-period">2023 — 2024</span>
+              </div>
+              <div class="job-company">Braga Soluções em TI</div>
+              <ul class="job-bullets">
+                <li>Garantia do funcionamento adequado dos produtos desenvolvidos pelo time, atuando junto aos usuários na identificação e resolução de problemas técnicos, dúvidas e incidentes críticos.</li>
+                <li>Atendimento a chamados dos usuários internos de sistema, registrando melhorias e correções no backlog de desenvolvimento.</li>
+              </ul>
+            </article>
+
+            <!-- GREENBRIER MAXION -->
+            <article class="job-card">
+              <div class="job-header">
+                <span class="job-role">Desenvolvedor de Sistemas</span>
+                <span class="job-period">2023</span>
+              </div>
+              <div class="job-company">Greenbrier Maxion</div>
+              <ul class="job-bullets">
+                <li>Atuação em TI industrial e Indústria 4.0 na planta fabril, integrando sistemas de automação de solda/corte e sustentando módulos do ERP corporativo.</li>
+                <li>Suporte a softwares de alta performance de engenharia de produto e criação de dashboards em BI para otimização de custos e acompanhamento de metas operacionais.</li>
+              </ul>
+            </article>
+
+            <!-- FACULDADE ADVENTISTA DO PARANÁ -->
+            <article class="job-card">
+              <div class="job-header">
+                <span class="job-role">Desenvolvedor Web</span>
+                <span class="job-period">2022 — 2023</span>
+              </div>
+              <div class="job-company">Faculdade Adventista do Paraná</div>
+              <ul class="job-bullets">
+                <li>Desenvolvimento e sustentação de portais e landing pages utilizando WordPress, Elementor, HTML5, PHP e JavaScript.</li>
+                <li>Integração de aplicações internas com ASP.NET, configuração de servidores web (.htaccess, php.ini) e automações de marketing com RD Station.</li>
+              </ul>
+            </article>
+
+            <!-- PROMAC EQUIPAMENTOS -->
+            <article class="job-card">
+              <div class="job-header">
+                <span class="job-role">Analista de Sistemas de TI</span>
+                <span class="job-period">2020 — 2022</span>
+              </div>
+              <div class="job-company">Promac Equipamentos Ltda</div>
+              <ul class="job-bullets">
+                <li>Análise e configuração de DNS, apontamentos de domínio e gestão de protocolos de e-mail (POP3, IMAP e Exchange em diferentes versões e provedores).</li>
+                <li>Suporte e emissão de Certificados Digitais SSL/TLS (Let's Encrypt, Wildcard, SSL OV) e administração de bancos de dados MySQL, SQL Server e PostgreSQL.</li>
+              </ul>
+            </article>
+
+            <!-- UNICAMP -->
+            <article class="job-card">
+              <div class="job-header">
+                <span class="job-role">Desenvolvedor Front-end</span>
+                <span class="job-period">2019 — 2020</span>
+              </div>
+              <div class="job-company">UNICAMP</div>
+              <ul class="job-bullets">
+                <li>Criação de novas telas e funcionalidades utilizando HTML, CSS, JavaScript e React.js no sistema acadêmico Sigaweb.</li>
+                <li>Consultas estruturadas em banco de dados MySQL, criação de stored procedures, modelagem de dados e suporte técnico especializado aos usuários.</li>
+              </ul>
+            </article>
+
+          </div>
+        </section>
+
+      </main>
+
+      <!-- SIDEBAR P1 (HABILIDADES TÉCNICAS NO FORMATO DE CERTIFICAÇÕES) -->
+      <aside class="side-col">
+        
+        <div class="side-block">
+          <h2 class="section-title">Habilidades Técnicas</h2>
+          
+          <!-- LINGUAGENS -->
+          <div class="skills-category-title">Linguagens</div>
+          <ul class="skills-list">
+            <li class="skill-item"><span class="skill-name">JavaScript &amp; TypeScript</span></li>
+            <li class="skill-item"><span class="skill-name">C# (.NET Core / ASP.NET)</span></li>
+            <li class="skill-item"><span class="skill-name">PHP &amp; Python</span></li>
+            <li class="skill-item"><span class="skill-name">SQL</span></li>
+          </ul>
+
+          <!-- FRONT-END -->
+          <div class="skills-category-title">Front-end</div>
+          <ul class="skills-list">
+            <li class="skill-item"><span class="skill-name">React &amp; Vue.js</span></li>
+            <li class="skill-item"><span class="skill-name">HTML5 Semântico &amp; CSS3/Sass</span></li>
+            <li class="skill-item"><span class="skill-name">UI/UX Responsivo &amp; Acessibilidade</span></li>
+          </ul>
+
+          <!-- BACK-END & ARQUITETURA -->
+          <div class="skills-category-title">Back-end &amp; Arquitetura</div>
+          <ul class="skills-list">
+            <li class="skill-item"><span class="skill-name">Node.js, NestJS &amp; Express</span></li>
+            <li class="skill-item"><span class="skill-name">ASP.NET Core &amp; Web APIs</span></li>
+            <li class="skill-item"><span class="skill-name">Microsserviços &amp; APIs RESTful</span></li>
+          </ul>
+
+          <!-- BANCOS DE DADOS -->
+          <div class="skills-category-title">Bancos de Dados</div>
+          <ul class="skills-list">
+            <li class="skill-item"><span class="skill-name">PostgreSQL &amp; SQL Server</span></li>
+          </ul>
+
+          <!-- DEVOPS & FERRAMENTAS -->
+          <div class="skills-category-title">DevOps &amp; Nuvem</div>
+          <ul class="skills-list">
+            <li class="skill-item"><span class="skill-name">Docker &amp; Containers</span></li>
+            <li class="skill-item"><span class="skill-name">Git, GitHub &amp; CI/CD Pipelines</span></li>
+            <li class="skill-item"><span class="skill-name">Azure Cloud &amp; Azure DevOps</span></li>
+          </ul>
+
+        </div>
+
+        <!-- FORMAÇÃO ACADÊMICA -->
+        <div class="side-block">
+          <h2 class="section-title">Formação Acadêmica</h2>
+          
+          <div class="edu-item">
+            <div class="edu-degree">MBA em Engenharia de Software</div>
+            <div class="edu-school">Faculdade Metropolitana</div>
+            <div class="edu-date">2021 — 2022</div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-degree">Pós-Graduação em Ciência de Dados e Big Data Analytics</div>
+            <div class="edu-school">Faculdade Metropolitana</div>
+            <div class="edu-date">2020 — 2022</div>
+          </div>
+
+          <div class="edu-item">
+            <div class="edu-degree">Bacharelado em Sistemas de Informação</div>
+            <div class="edu-school">UNASP - Centro Universitário Adventista de São Paulo</div>
+            <div class="edu-date">2016 — 2020</div>
+          </div>
+        </div>
+
+        <!-- IDIOMAS -->
+        <div class="side-block">
+          <h2 class="section-title">Idiomas</h2>
+          <div class="lang-item">
+            <span class="lang-name">Português:</span>
+            <span class="lang-level">Nativo</span>
+          </div>
+          <div class="lang-item">
+            <span class="lang-name">Inglês:</span>
+            <span class="lang-level">Técnico (Fluente para leitura/escrita)</span>
+          </div>
+        </div>
+
+      </aside>
+
+    </div>
+
+    <!-- FOOTER P1 -->
+    <footer class="page-footer">
+      <span>Casimiro Custódio Gundja</span>
+      <span>Página 1 de 2</span>
+    </footer>
+
+  </div>
+
+
+  <!-- ==================== PÁGINA 2 ==================== -->
+  <div class="page">
+    
+    <!-- HEADER P2 -->
+    <header class="header-p2">
+      <div class="header-p2-left">
+        <span class="header-p2-title">Casimiro Custódio Gundja</span>
+        <span class="header-p2-sep">·</span>
+        <span class="header-p2-role">Desenvolvedor Full Stack</span>
+      </div>
+      <div class="header-p2-contact">
+        <a href="https://casigundja.github.io/" target="_blank">casigundja.github.io</a>
+        <span class="header-p2-sep">·</span>
+        <a href="mailto:casimirogundja@outlook.com">casimirogundja@outlook.com</a>
+        <span class="header-p2-sep">·</span>
+        <a href="https://wa.me/5519953248420">+55 (19) 95324-8420</a>
+      </div>
+    </header>
+
+    <!-- GRID P2 -->
+    <div class="container">
+      
+      <!-- MAIN P2 -->
+      <main class="main-col">
+
+        <!-- PROJETOS EM DESTAQUE -->
+        <section>
+          <h2 class="section-title">Projetos em Destaque</h2>
+          
+          <!-- PROJETO EM ANDAMENTO -->
+          <div class="project-card project-ongoing">
+            <div class="project-name">
+              <div class="project-title-group">
+                <span>RACHI · Logística &amp; Gestão Portuária em Tempo Real</span>
+                <span class="status-badge status-active">● Em Andamento</span>
+              </div>
+              <a href="https://hom.rachi.ao" target="_blank" class="project-url">hom.rachi.ao ↗</a>
+            </div>
+            <div class="project-tech">React · TypeScript · Node.js · C# .NET Core · PostgreSQL · Docker · Azure</div>
+            <div class="project-desc">
+              Plataforma corporativa de ponta a ponta voltada ao rastreamento contínuo de contêineres e cargas portuárias, gestão de conformidade aduaneira e emissão de alertas críticos. Arquitetura distribuída de microsserviços, mapas interativos e dashboards operacionais de alta disponibilidade.
+            </div>
+            <ul class="project-highlights">
+              <li><strong>Arquitetura &amp; Escalabilidade:</strong> Microsserviços conteinerizados com Docker, mensageria e endpoints RESTful de alta performance.</li>
+              <li><strong>Rastreabilidade &amp; Telemetria:</strong> Acompanhamento geográfico em tempo real de cargas e integração direta com fluxos aduaneiros.</li>
+            </ul>
+          </div>
+
+          <!-- SEPARAÇÃO & LEGENDA -->
+          <div class="projects-divider">
+            <span>Projetos Concluídos &amp; Entregues</span>
+          </div>
+
+          <!-- PROJETOS CONCLUÍDOS -->
+          <div class="project-card">
+            <div class="project-name">
+              <span>KLASSE · Ecossistema Acadêmico e de Aprendizagem</span>
+              <a href="https://klasse.ao/" target="_blank" class="project-url">klasse.ao ↗</a>
+            </div>
+            <div class="project-tech">TypeScript · React · Node.js · MySQL · REST APIs</div>
+            <div class="project-desc">
+              Solução educacional abrangente para controle pedagógico, gestão de turmas, matrículas, notas e frequência escolar, com dashboards analíticos de desempenho estudantil e retenção.
+            </div>
+            <ul class="project-highlights">
+              <li><strong>Gestão Educacional Centralizada:</strong> Controle integral de turmas, avaliações, matrículas e relatórios acadêmicos em larga escala.</li>
+              <li><strong>Métricas &amp; Desempenho:</strong> Dashboards dinâmicos para visualização de retenção, frequência e indicadores escolares em tempo real.</li>
+            </ul>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">
+              <span>Portal FAP · Sistema de Vestibulares e Matrículas</span>
+              <a href="https://faculdadeadventista.edu.br/" target="_blank" class="project-url">fap.edu.br ↗</a>
+            </div>
+            <div class="project-tech">PHP · JavaScript · CSS3 · MySQL · Automação</div>
+            <div class="project-desc">
+              Portal institucional e processo seletivo online dinâmico para a Faculdade Adventista do Paraná, incluindo sistema de provas online, validação de inscritos e integração aos sistemas acadêmicos centrais.
+            </div>
+            <ul class="project-highlights">
+              <li><strong>Processo Seletivo Digital:</strong> Aplicação de vestibulares virtuais com suporte a acessos simultâneos e validação imediata.</li>
+              <li><strong>Integração &amp; Automação:</strong> Sincronização automatizada com sistemas legados da instituição e campanhas no RD Station.</li>
+            </ul>
+          </div>
+        </section>
+
+      </main>
+
+      <!-- SIDEBAR P2 -->
+      <aside class="side-col">
+
+        <!-- CERTIFICAÇÕES -->
+        <div class="side-block">
+          <h2 class="section-title">Certificações</h2>
+          <ul class="cert-list">
+            <li class="cert-item">
+              <span class="cert-name">Projetos de Sistemas & Modelagem</span>
+              <span class="cert-year">2020</span>
+            </li>
+            <li class="cert-item">
+              <span class="cert-name">C# .NET Core & ASP.NET</span>
+              <span class="cert-year">Especialização</span>
+            </li>
+            <li class="cert-item">
+              <span class="cert-name">JavaScript & TypeScript</span>
+              <span class="cert-year">2021</span>
+            </li>
+            <li class="cert-item">
+              <span class="cert-name">HTML5, CSS3 & Design Systems</span>
+              <span class="cert-year">2021</span>
+            </li>
+            <li class="cert-item">
+              <span class="cert-name">Lógica & Algoritmos Avançados</span>
+              <span class="cert-year">2021</span>
+            </li>
+          </ul>
+        </div>
+
+        <!-- PRÁTICAS DE ENGENHARIA -->
+        <div class="side-block">
+          <h2 class="section-title">Práticas de Engenharia</h2>
+          <ul class="practice-list">
+            <li class="practice-item">
+              <span class="practice-bullet">✓</span>
+              <span>Arquitetura de Microsserviços &amp; APIs</span>
+            </li>
+            <li class="practice-item">
+              <span class="practice-bullet">✓</span>
+              <span>Clean Code, SOLID &amp; Boas Práticas</span>
+            </li>
+            <li class="practice-item">
+              <span class="practice-bullet">✓</span>
+              <span>Pipelines CI/CD &amp; Deploy Automatizado</span>
+            </li>
+            <li class="practice-item">
+              <span class="practice-bullet">✓</span>
+              <span>Code Review &amp; Mentoria Técnica</span>
+            </li>
+            <li class="practice-item">
+              <span class="practice-bullet">✓</span>
+              <span>Metodologias Ágeis (Scrum / Kanban)</span>
+            </li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+
+    <!-- FOOTER P2 -->
+    <footer class="page-footer">
+      <span>Casimiro Custódio Gundja</span>
+      <span>Página 2 de 2</span>
+    </footer>
+
+  </div>
+
+</body>
+</html>
