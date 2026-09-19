@@ -1,3 +1,3 @@
 <p align="center">
-  <img src="./banner.svg" alt="Casimiro Gundja — Desenvolvedor Full Stack Sênior">
+  <img src="./banner.svg" alt="Casimiro Gundja — Desenvolvedor Full Stack">
 </p>
