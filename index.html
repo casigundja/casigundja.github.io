@@ -1,75 +1,1183 @@
 <!doctype html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Portfólio de Casigundja — projetos, habilidades e formas de contato.">
-  <title>Casigundja | Portfólio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#090b09">
+	<meta name="description"
+		content="Casimiro Custódio Gundja — Desenvolvedor Full Stack & Analista de Sistemas em São Paulo. Especialista em backend, APIs RESTful, integrações e modelagem de fluxos corporativos.">
+	<meta name="author" content="Casimiro Custódio Gundja">
+
+	<title>Casimiro Gundja — Desenvolvedor Full Stack & Analista de Sistemas</title>
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Casimiro Gundja — Desenvolvedor Full Stack & Analista de Sistemas">
+	<meta property="og:description"
+		content="Portfólio profissional de Casimiro Gundja. Experiência em desenvolvimento full stack, engenharia de software e análise de sistemas.">
+	<meta property="og:image" content="1780100919820.jpg">
+	<meta property="og:type" content="website">
+
+	<!-- Estilo Principal -->
+	<link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="site-header">
-    <nav class="nav container" aria-label="Navegação principal">
-      <a class="brand" href="#inicio" aria-label="Início">casigundja<span>.</span></a>
-      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
-      <div class="nav-links">
-        <a href="#sobre">Sobre</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#habilidades">Habilidades</a>
-        <a class="nav-cta" href="#contato">Vamos conversar <span>↗</span></a>
-      </div>
-    </nav>
-  </header>
 
-  <main>
-    <section id="inicio" class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot"></span> Disponível para novos projetos</p>
-        <h1>Transformo ideias em experiências <em>digitais.</em></h1>
-        <p class="hero-text">Olá, eu sou Casigundja. Este é o meu espaço para compartilhar projetos, aprendizados e tudo o que estou construindo na tecnologia.</p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#projetos">Ver meus projetos <span>↓</span></a>
-          <a class="button button-ghost" href="https://github.com/casigundja" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
-        </div>
-      </div>
-      <div class="hero-art" aria-hidden="true">
-        <div class="orb orb-one"></div><div class="orb orb-two"></div>
-        <div class="code-card"><span class="code-comment">// criando o próximo projeto</span><br><span class="code-key">const</span> <span class="code-name">ideia</span> = <span class="code-string">"possível"</span>;<br><span class="code-key">return</span> <span class="code-name">ideia</span>;</div>
-      </div>
-    </section>
+<body id="top">
 
-    <section id="sobre" class="section container split-section">
-      <div class="section-label"><span>01</span><span class="line"></span><span>Sobre mim</span></div>
-      <div class="section-content">
-        <h2>Curioso por natureza,<br><strong>criador por escolha.</strong></h2>
-        <p>Gosto de aprender fazendo: entender problemas, explorar possibilidades e criar soluções simples, úteis e bonitas. Aqui você encontra um pouco da minha jornada e dos projetos que representam esse caminho.</p>
-        <p>Este portfólio está em constante evolução — assim como eu.</p>
-      </div>
-    </section>
+	<!-- Link de acessibilidade -->
+	<a class="skip" href="#conteudo">Pular para o conteúdo</a>
 
-    <section id="projetos" class="section projects-section">
-      <div class="container">
-        <div class="section-label"><span>02</span><span class="line"></span><span>Projetos</span></div>
-        <div class="section-heading"><h2>O que estou <strong>construindo.</strong></h2><a href="https://github.com/casigundja?tab=repositories" target="_blank" rel="noreferrer">Ver todos no GitHub ↗</a></div>
-        <div class="project-grid">
-          <article class="project-card project-featured"><div class="project-number">01</div><div><p class="project-type">Portfólio pessoal</p><h3>Meu espaço na web</h3><p>Uma página para apresentar meus projetos, habilidades e minha evolução profissional.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div><a class="project-arrow" href="https://github.com/casigundja/casigundja.github.io" target="_blank" rel="noreferrer" aria-label="Ver código do portfólio">↗</a></article>
-          <article class="project-card"><div class="project-number">02</div><div><p class="project-type">Em breve</p><h3>Próximo projeto</h3><p>Um novo projeto está a caminho. Volte em breve para acompanhar as novidades.</p><div class="tags"><span>Em construção</span></div></div><span class="project-arrow muted">✦</span></article>
-        </div>
-      </div>
-    </section>
+	<!-- Header -->
+	<header>
+		<div class="wrap header-inner">
+			<a class="logo" href="#inicio" aria-label="Casimiro Gundja — Início">CG</a>
 
-    <section id="habilidades" class="section container split-section skills-section">
-      <div class="section-label"><span>03</span><span class="line"></span><span>Habilidades</span></div>
-      <div class="section-content"><h2>Ferramentas para<br><strong>tirar ideias do papel.</strong></h2><div class="skill-list"><span>HTML & CSS</span><span>JavaScript</span><span>Git & GitHub</span><span>Design responsivo</span><span>Aprendizado contínuo</span></div></div>
-    </section>
+			<div class="veil" aria-hidden="true"></div>
 
-    <section id="contato" class="contact-section"><div class="container contact-inner"><p class="eyebrow">04 — Contato</p><h2>Tem uma ideia?<br><em>Vamos conversar.</em></h2><p>Estou sempre aberto a conhecer pessoas e projetos interessantes.</p><a class="button button-primary" href="https://github.com/casigundja" target="_blank" rel="noreferrer">Falar comigo no GitHub ↗</a></div></section>
-  </main>
+			<nav id="menu" aria-label="Menu principal">
+				<a href="#inicio" aria-current="page">Início</a>
+				<a href="#sobre">Sobre</a>
+				<a href="#projetos">Projetos</a>
+				<a href="#curriculo">Trajetória</a>
+				<a href="#stack">Stack</a>
+				<a href="#contato">Contato</a>
+			</nav>
 
-  <footer class="footer container"><span>© <span id="year"></span> Casigundja</span><span>Feito com curiosidade e código.</span><a href="#inicio">Voltar ao topo ↑</a></footer>
-  <script src="script.js"></script>
+			<button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="menu"
+				aria-expanded="false">
+				<span></span>
+				<span></span>
+			</button>
+		</div>
+	</header>
+
+	<main id="conteudo">
+
+		<!-- Hero / Abertura -->
+		<section id="inicio" class="hero" aria-labelledby="hero-title">
+			<div class="hero-photo" style="--cover:url('intro-bg.jpg')" aria-hidden="true"></div>
+			<div class="wrap hero-inner">
+				<div class="availability-pill">
+					<span class="pill-dot"></span>
+					<span>Disponível para novos desafios · Full Stack &amp; Sistemas</span>
+				</div>
+				<p class="eyebrow">Desenvolvimento de Software &amp; Sistemas</p>
+				<h1 id="hero-title">Casimiro Gundja</h1>
+				<p class="hero-role">
+					<strong>Desenvolvedor Full Stack</strong> · Analista de Sistemas<br>
+					Pós-Graduado em Engenharia de Software &amp; Ciência de Dados
+				</p>
+
+				<div class="hero-cta">
+					<a class="btn primary" href="#sobre">Conhecer perfil &nbsp; ↓</a>
+					<a class="btn outline-blue" href="casimiro_custodio.pdf" target="_blank" rel="noopener noreferrer">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+							<polyline points="14 2 14 8 20 8" />
+							<line x1="16" y1="13" x2="8" y2="13" />
+							<line x1="16" y1="17" x2="8" y2="17" />
+							<polyline points="10 9 9 9 8 9" />
+						</svg>
+						Visualizar Currículo &nbsp; ↗
+					</a>
+				</div>
+
+				<div class="social-links">
+					<a href="https://www.linkedin.com/in/casimiro-cust%C3%B3dio-101770106/" target="_blank"
+						rel="noopener noreferrer">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path
+								d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+						</svg>
+						LinkedIn
+					</a>
+					<a href="https://github.com/casigundja" target="_blank" rel="noopener noreferrer">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" />
+						</svg>
+						GitHub
+					</a>
+					<a href="https://wa.me/5519953248420" target="_blank" rel="noopener noreferrer">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path
+								d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+						</svg>
+						WhatsApp
+					</a>
+					<a href="mailto:casimirogundja@outlook.com">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+							<polyline points="22,6 12,13 2,6" />
+						</svg>
+						E-mail
+					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- Sobre -->
+		<section id="sobre" class="section reveal" aria-labelledby="about-title">
+			<div class="wrap">
+				<div class="about-heading">
+					<p class="eyebrow">Sobre</p>
+					<h2 class="section-title" id="about-title">Um pouco sobre mim</h2>
+				</div>
+
+				<div class="about-intro">
+					<img class="portrait" src="1780100919820.jpg" alt="Casimiro Custódio Gundja" width="120"
+						height="120">
+					<p>
+						Sou graduado em <strong>Sistemas de Informação</strong> pelo UNASP, pós-graduado em
+						<strong>Engenharia de Software (MBA)</strong> e em <strong>Ciência de Dados e Big Data
+							Analytics</strong>. Atualmente, atuo como Desenvolvedor Full Stack no <strong>Grupo
+							Assist</strong>, com vivência sólida em desenvolvimento de aplicações web, arquitetura de
+						APIs e automação de fluxos operacionais.
+					</p>
+				</div>
+
+				<!-- Barra de destaques executivos -->
+				<div class="stats-bar">
+					<div class="stat-item">
+						<span class="stat-value">+5 Anos</span>
+						<span class="stat-label">Experiência prática em TI e Engenharia de Software</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-value">Full Stack</span>
+						<span class="stat-label">PHP, Laravel, TypeScript, React &amp; APIs RESTful</span>
+					</div>
+					<div class="stat-item">
+						<span class="stat-value">2x Pós-Graduado</span>
+						<span class="stat-label">MBA em Software &amp; Big Data Analytics</span>
+					</div>
+				</div>
+
+				<div class="about-columns">
+					<div>
+						<h3>Perfil</h3>
+						<p>
+							Desenvolvedor focado em resolver problemas técnicos complexos e otimizar processos com PHP,
+							React, API REST, HTML, JavaScript e JSON, garantindo eficiência, estabilidade e segurança.
+						</p>
+
+						<dl class="profile-facts">
+							<div>
+								<dt>Localização</dt>
+								<dd>Hortolândia - SP, Brasil</dd>
+							</div>
+							<div>
+								<dt>Email</dt>
+								<dd><a href="mailto:casimirogundja@outlook.com">casimirogundja@outlook.com</a></dd>
+							</div>
+						</dl>
+					</div>
+
+					<div>
+						<h3>No dia a dia</h3>
+						<dl class="skills-list">
+							<div>
+								<dt>Arquitetura e Desenvolvimento Full Stack</dt>
+								<dd>Construção e evolução de aplicações web modernas (Front e Back), APIs RESTful,
+									microsserviços e integração de bancos de dados.</dd>
+							</div>
+							<div>
+								<dt>Qualidade de Código e Engenharia</dt>
+								<dd>Práticas de TDD, testes de software, code reviews, documentação técnica detalhada e
+									metodologias ágeis (Scrum/Kanban).</dd>
+							</div>
+						</dl>
+					</div>
+				</div>
+
+				<div class="actions about-actions">
+					<a class="btn primary" href="casimiro_custodio.pdf" target="_blank" rel="noopener noreferrer">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+							<polyline points="14 2 14 8 20 8" />
+							<line x1="16" y1="13" x2="8" y2="13" />
+							<line x1="16" y1="17" x2="8" y2="17" />
+							<polyline points="10 9 9 9 8 9" />
+						</svg>
+						Visualizar Currículo
+					</a>
+					<a href="https://www.linkedin.com/in/casimiro-cust%C3%B3dio-101770106/" class="btn" target="_blank"
+						rel="noopener noreferrer">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path
+								d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+						</svg>
+						Ver perfil no LinkedIn
+					</a>
+					<a href="https://wa.me/5519953248420" class="btn" target="_blank" rel="noopener noreferrer">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path
+								d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+						</svg>
+						Conversar no WhatsApp
+					</a>
+				</div>
+
+				<!-- Filosofia de Engenharia para Recrutadores & Líderes Técnicos -->
+				<div class="engineering-philosophy">
+					<h3 class="philosophy-title">
+						<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<polygon points="12 2 2 7 12 12 22 7 12 2" />
+							<polyline points="2 17 12 22 22 17" />
+							<polyline points="2 12 12 17 22 12" />
+						</svg>
+						Filosofia de Engenharia &amp; Boas Práticas
+					</h3>
+					<div class="philosophy-grid">
+						<div class="philosophy-card">
+							<h4>
+								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+									<path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+									<polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+									<line x1="12" y1="22.08" x2="12" y2="12" />
+								</svg>
+								Clean Architecture &amp; SOLID
+							</h4>
+							<p>
+								Código sustentável e desacoplado através de camadas bem estruturadas (Domain, Service, Repository), viabilizando testes automatizados, alta manutenibilidade e evolução contínua sem débito técnico precoce.
+							</p>
+						</div>
+
+						<div class="philosophy-card">
+							<h4>
+								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+									<circle cx="12" cy="12" r="10" />
+									<polyline points="12 6 12 12 14 14" />
+								</svg>
+								Performance &amp; Escala de Dados
+							</h4>
+							<p>
+								Modelagem relacional estrita, indexação estratégica e consultas SQL otimizadas para baixa latência. Resiliência por meio de jobs assíncronos em fila e políticas eficientes de cache.
+							</p>
+						</div>
+
+						<div class="philosophy-card">
+							<h4>
+								<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+									<path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+									<polyline points="22 4 12 14.01 9 11.01" />
+								</svg>
+								Engenharia Orientada a Negócio
+							</h4>
+							<p>
+								Tecnologia como viabilizadora de resultado real: redução mensurável de tempos operacionais, automação confiável de fluxos corporativos e entrega contínua com previsibilidade e segurança.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Projetos -->
+		<section id="projetos" class="section projects-section reveal" aria-labelledby="projects-title">
+			<div class="wrap">
+				<p class="eyebrow">Projetos</p>
+				<h2 class="section-title" id="projects-title">Projeto em andamento</h2>
+
+				<!-- Projeto 01 - RACHI — Soluções Inteligentes (Em Andamento) -->
+				<article class="project-feature">
+					<div class="project-copy">
+						<div class="project-header-meta">
+							<span class="project-number" aria-hidden="true">01</span>
+							<span class="project-status-badge"><span class="pulse-dot"></span> Em andamento</span>
+						</div>
+						<h3>RACHI — Soluções Inteligentes</h3>
+						<p class="project-type">Ecossistema Empresarial &amp; Digital · B2B &amp; MPME · Luanda, Angola</p>
+						<p>
+							Ecossistema digital integrado para MPMEs e instituições em Angola, unificando 4 unidades de negócio (Human Capital, Academy, Tec e Print) e e-commerce corporativo com entregas em Luanda.
+						</p>
+						<div class="project-topics">
+							<span>Plataforma B2B</span>
+							<span>E-commerce</span>
+							<span>PHP / Web</span>
+							<span>Multitenancy</span>
+							<span>PT / EN</span>
+						</div>
+
+						<div class="project-engineering">
+							<div class="eng-item">
+								<span class="eng-label">Desafio Técnico</span>
+								<p class="eng-desc">Unificar 4 áreas de negócio, catálogo B2B com checkout e governança em uma plataforma veloz e intuitiva.</p>
+							</div>
+							<div class="eng-item">
+								<span class="eng-label">Solução Arquitetural</span>
+								<p class="eng-desc">Arquitetura modular em PHP, domínios de negócio desacoplados, suporte multilíngue dinâmico e design responsivo.</p>
+							</div>
+						</div>
+
+						<div class="actions">
+							<a href="https://hom.rachi.ao/" class="btn primary" target="_blank" rel="noopener noreferrer">
+								Visitar plataforma oficial &nbsp; ↗
+							</a>
+						</div>
+					</div>
+					<figure class="project-visual browser-showcase wide rachi-gallery">
+						<div class="browser-bar" aria-hidden="true">
+							<div class="browser-controls">
+								<span class="browser-dot red"></span>
+								<span class="browser-dot yellow"></span>
+								<span class="browser-dot green"></span>
+							</div>
+							<span class="browser-url">https://hom.rachi.ao</span>
+							<div class="gallery-nav-btns">
+								<button class="gallery-btn prev" type="button" aria-label="Arte anterior">
+									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+										<polyline points="15 18 9 12 15 6" />
+									</svg>
+								</button>
+								<button class="gallery-btn next" type="button" aria-label="Próxima arte">
+									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+										<polyline points="9 18 15 12 9 6" />
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="gallery-slider" id="rachi-slider" tabindex="0"
+							aria-label="Galeria da plataforma RACHI">
+							<!-- Arte 01: Home & Ecossistema -->
+							<div class="gallery-slide" data-index="0">
+								<img src="rachi_hero.png" alt="Plataforma Oficial RACHI — Ecossistema de Soluções Inteligentes"
+									loading="lazy" width="1600" height="975">
+								<div class="gallery-caption"><span>01 / 04</span> · Home · Ecossistema de Soluções</div>
+							</div>
+
+							<!-- Arte 02: Ecossistema de Soluções -->
+							<div class="gallery-slide" data-index="1">
+								<img src="rachi_ecosystem.png"
+									alt="Ecossistema Integrado RACHI — Human Capital, Academy, Tec e Print"
+									loading="lazy" width="1512" height="732">
+								<div class="gallery-caption"><span>02 / 04</span> · 4 Áreas de Soluções Integradas</div>
+							</div>
+
+							<!-- Arte 03: Quem Somos -->
+							<div class="gallery-slide" data-index="2">
+								<img src="rachi_about.png"
+									alt="Equipa RACHI — Pessoas, Processos e Tecnologia"
+									loading="lazy" width="1600" height="900">
+								<div class="gallery-caption"><span>03 / 04</span> · Quem Somos · Pessoas, Processos &amp; Tecnologia</div>
+							</div>
+
+							<!-- Arte 04: Soluções para Negócios -->
+							<div class="gallery-slide" data-index="3">
+								<img src="rachi_team.png"
+									alt="O Que Fazemos — Soluções para Negócios e MPME" loading="lazy" width="1600"
+									height="900">
+								<div class="gallery-caption"><span>04 / 04</span> · O Que Fazemos · Soluções para MPME</div>
+							</div>
+						</div>
+
+						<div class="gallery-pagination" aria-hidden="true">
+							<button class="gallery-dot active" type="button" aria-label="Ir para arte 1"></button>
+							<button class="gallery-dot" type="button" aria-label="Ir para arte 2"></button>
+							<button class="gallery-dot" type="button" aria-label="Ir para arte 3"></button>
+							<button class="gallery-dot" type="button" aria-label="Ir para arte 4"></button>
+						</div>
+					</figure>
+				</article>
+
+				<!-- Divisor para projetos realizados -->
+				<div style="margin-top: 56px; margin-bottom: 24px;">
+					<h3 class="section-title" style="font-size: clamp(22px, 2.5vw, 28px);">Projetos realizados</h3>
+				</div>
+
+				<!-- Projeto 02 - Portal Institucional FAP -->
+				<article class="project-feature">
+					<div class="project-copy">
+						<span class="project-number" aria-hidden="true">02</span>
+						<h3>Portal Institucional FAP</h3>
+						<p class="project-type">Ensino Superior &amp; Educação Básica · Paraná</p>
+						<p>
+							Reestruturação e desenvolvimento do portal da Faculdade Adventista do Paraná, unificando Graduação, Pós e Educação Básica com SEO técnico e integração corporativa.
+						</p>
+						<div class="project-topics">
+							<span>WordPress / PHP</span>
+							<span>ASP.NET</span>
+							<span>Lighthouse 95+</span>
+							<span>RD Station</span>
+						</div>
+
+						<div class="project-engineering">
+							<div class="eng-item">
+								<span class="eng-label">Desafio Técnico</span>
+								<p class="eng-desc">Centralizar 3 ecossistemas legados com alta performance e zero downtime sob picos no Vestibular.</p>
+							</div>
+							<div class="eng-item">
+								<span class="eng-label">Solução Arquitetural</span>
+								<p class="eng-desc">Temas PHP otimizados, cache multinível e integração assíncrona ao ASP.NET corporativo e automações de marketing.</p>
+							</div>
+						</div>
+
+						<div class="actions">
+							<a href="https://www.faculdadeadventista.edu.br/" class="btn primary" target="_blank"
+								rel="noopener noreferrer">
+								Visitar portal oficial &nbsp; ↗
+							</a>
+						</div>
+					</div>
+					<figure class="project-visual browser-showcase wide fap-gallery">
+						<div class="browser-bar" aria-hidden="true">
+							<div class="browser-controls">
+								<span class="browser-dot red"></span>
+								<span class="browser-dot yellow"></span>
+								<span class="browser-dot green"></span>
+							</div>
+							<span class="browser-url">https://faculdadeadventista.edu.br</span>
+							<div class="gallery-nav-btns">
+								<button class="gallery-btn prev" type="button" aria-label="Arte anterior">
+									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+										<polyline points="15 18 9 12 15 6" />
+									</svg>
+								</button>
+								<button class="gallery-btn next" type="button" aria-label="Próxima arte">
+									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+										<polyline points="9 18 15 12 9 6" />
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="gallery-slider" id="fap-slider" tabindex="0"
+							aria-label="Galeria de artes do portal FAP">
+							<!-- Arte 01: Portal Oficial -->
+							<div class="gallery-slide" data-index="0">
+								<img src="fap_website.png" alt="Portal oficial da Faculdade Adventista do Paraná"
+									loading="lazy" width="1200" height="630">
+								<div class="gallery-caption">
+									<span>01 / 04</span> · Portal Oficial FAP
+								</div>
+							</div>
+
+							<!-- Arte 02: Nota Máxima MEC -->
+							<div class="gallery-slide" data-index="1">
+								<img src="fap_banner2.png" alt="Nota Máxima 5 no MEC - Faculdade Adventista do Paraná"
+									loading="lazy" width="1200" height="400">
+								<div class="gallery-caption">
+									<span>02 / 04</span> · Reconhecimento · Nota Máxima 5 no MEC
+								</div>
+							</div>
+
+							<!-- Arte 03: 85 Anos da Instituição -->
+							<div class="gallery-slide" data-index="2">
+								<img src="fap_banner7.jpg"
+									alt="Campanha 85 Anos Formando Pessoas para Transformar o Mundo" loading="lazy"
+									width="1200" height="400">
+								<div class="gallery-caption">
+									<span>03 / 04</span> · Campanha Global · 85 Anos da Instituição
+								</div>
+							</div>
+
+							<!-- Arte 04: Agência de Voluntariado -->
+							<div class="gallery-slide" data-index="3">
+								<img src="fap_banner5.jpg" alt="Ativa Agência de Voluntariado e Missão - FAP"
+									loading="lazy" width="1200" height="400">
+								<div class="gallery-caption">
+									<span>04 / 04</span> · Agência de Missão &amp; Voluntariado
+								</div>
+							</div>
+						</div>
+
+						<div class="gallery-pagination" aria-hidden="true">
+							<button class="gallery-dot active" type="button" aria-label="Ir para arte 1"></button>
+							<button class="gallery-dot" type="button" aria-label="Ir para arte 2"></button>
+							<button class="gallery-dot" type="button" aria-label="Ir para arte 3"></button>
+							<button class="gallery-dot" type="button" aria-label="Ir para arte 4"></button>
+						</div>
+					</figure>
+				</article>
+
+				<!-- Projeto 03 - KLASSE -->
+				<article class="project-feature">
+					<div class="project-copy">
+						<span class="project-number" aria-hidden="true">03</span>
+						<h3>KLASSE — Sistema de Gestão Escolar</h3>
+						<p class="project-type">SaaS Educacional · Angola · Web &amp; Mobile</p>
+						<p>
+							Plataforma SaaS de gestão escolar e financeira em Angola, com cobrança de propinas em tempo real, matrículas digitais e 5 portais integrados alinhados às diretrizes do MED.
+						</p>
+						<div class="project-topics">
+							<span>Next.js / React</span>
+							<span>TypeScript</span>
+							<span>APIs RESTful</span>
+							<span>Gestão de Propinas</span>
+							<span>Conformidade MED</span>
+						</div>
+
+						<div class="project-engineering">
+							<div class="eng-item">
+								<span class="eng-label">Desafio Técnico</span>
+								<p class="eng-desc">Conciliação financeira em tempo real com integridade transacional, multi-tenancy e regras do MED.</p>
+							</div>
+							<div class="eng-item">
+								<span class="eng-label">Solução Arquitetural</span>
+								<p class="eng-desc">Modelagem transacional ACID para faturamento, controle RBAC nos 5 portais e emissão assíncrona de pautas oficiais.</p>
+							</div>
+						</div>
+
+						<div class="actions">
+							<a href="https://klasse.ao/" class="btn primary" target="_blank" rel="noopener noreferrer">
+								Visitar plataforma oficial &nbsp; ↗
+							</a>
+						</div>
+					</div>
+					<figure class="project-visual browser-showcase wide klasse-gallery">
+						<div class="browser-bar" aria-hidden="true">
+							<div class="browser-controls">
+								<span class="browser-dot red"></span>
+								<span class="browser-dot yellow"></span>
+								<span class="browser-dot green"></span>
+							</div>
+							<span class="browser-url">https://klasse.ao</span>
+							<div class="gallery-nav-btns">
+								<button class="gallery-btn prev" type="button" aria-label="Arte anterior">
+									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+										<polyline points="15 18 9 12 15 6" />
+									</svg>
+								</button>
+								<button class="gallery-btn next" type="button" aria-label="Próxima arte">
+									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+										stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+										<polyline points="9 18 15 12 9 6" />
+									</svg>
+								</button>
+							</div>
+						</div>
+
+						<div class="gallery-slider" id="klasse-slider" tabindex="0"
+							aria-label="Galeria de artes da plataforma KLASSE">
+							<!-- Arte 01: Visão Geral & Portais -->
+							<div class="gallery-slide" data-index="0">
+								<img src="klasse.png"
+									alt="Visão Geral da plataforma KLASSE - Gestão Escolar para Angola" loading="lazy"
+									width="1200" height="630">
+								<div class="gallery-caption">
+									<span>01 / 04</span> · Visão Geral &amp; Portais Integrados
+								</div>
+							</div>
+
+							<!-- Arte 02: Dashboard de Gestão -->
+							<div class="gallery-slide" data-index="1">
+								<img src="klasse_dashboard.png"
+									alt="Dashboard Administrativo KLASSE - Métricas, turmas e cobranças em tempo real"
+									loading="lazy" width="1200" height="675">
+								<div class="gallery-caption">
+									<span>02 / 04</span> · Dashboard de Gestão &amp; Finanças
+								</div>
+							</div>
+
+							<!-- Arte 03: Portal do Aluno Mobile -->
+							<div class="gallery-slide" data-index="2">
+								<img src="klasse_mobile.png"
+									alt="Portal do Aluno e Encarregados de Educação KLASSE no telemóvel" loading="lazy"
+									width="900" height="1600">
+								<div class="gallery-caption">
+									<span>03 / 04</span> · Portal do Aluno &amp; Encarregados (Mobile)
+								</div>
+							</div>
+
+							<!-- Arte 04: Rotina Real & Implementação -->
+							<div class="gallery-slide" data-index="3">
+								<img src="klasse_implementation.png"
+									alt="Equipa escolar utilizando o sistema KLASSE na rotina institucional"
+									loading="lazy" width="1200" height="675">
+								<div class="gallery-caption">
+									<span>04 / 04</span> · Rotina Real &amp; Operação Escolar
+								</div>
+							</div>
+						</div>
+
+						<div class="gallery-pagination" aria-hidden="true">
+							<button class="gallery-dot active" type="button" aria-label="Ir para arte 1"></button>
+							<button class="gallery-dot" type="button" aria-label="Ir para arte 2"></button>
+							<button class="gallery-dot" type="button" aria-label="Ir para arte 3"></button>
+							<button class="gallery-dot" type="button" aria-label="Ir para arte 4"></button>
+						</div>
+					</figure>
+				</article>
+			</div>
+		</section>
+
+		<!-- Trajetória (Currículo) -->
+		<section id="curriculo" class="section resume reveal" aria-labelledby="resume-title">
+			<div class="wrap">
+				<div class="resume-intro">
+					<p class="eyebrow">Currículo</p>
+					<h2 class="section-title" id="resume-title">Minha trajetória profissional</h2>
+					<p>Experiência prática, formação acadêmica e certificações técnicas</p>
+				</div>
+
+				<h3 class="resume-subtitle">
+					<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+						stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+						<rect x="2" y="7" width="20" height="14" rx="2" ry="2" />
+						<path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+					</svg>
+					Experiência profissional
+				</h3>
+
+				<div class="timeline">
+
+					<!-- 01 Grupo Assist -->
+					<article class="timeline-item">
+						<div>
+							<h3 class="timeline-company">Grupo Assist</h3>
+							<p class="timeline-date">2025 — Atual</p>
+						</div>
+						<div class="timeline-content">
+							<div class="sub-timeline">
+								<!-- 1. Cargo Atual -->
+								<div class="sub-timeline-role">
+									<div class="sub-role-header">
+										<h3>
+											Desenvolvedor Full Stack
+											<span class="role-badge">Atuação Atual</span>
+										</h3>
+										<span class="sub-role-date">Mai de 2026 — Atual</span>
+									</div>
+									<div class="role-update">
+										<p class="role-update-label">Escopo &amp; Foco</p>
+										<h4>Aplicações Web &amp; Integrações Corporativas</h4>
+										<p>
+											Desenvolvimento e sustentação de sistemas e aplicações web completas (Front-end e Back-end).
+											Criação e consumo de APIs RESTful para integração de serviços, automação de processos,
+											modelagem de bancos de dados, revisões de código (Code Review) e entregas com foco em
+											performance e estabilidade.
+										</p>
+									</div>
+									<p>
+										Tecnologias: PHP, Laravel, TypeScript, React, APIs REST, PostgreSQL, Git e Metodologias Ágeis.
+									</p>
+								</div>
+
+								<!-- 2. Cargo Anterior (Evolução Interna) -->
+								<div class="sub-timeline-role previous">
+									<div class="sub-role-header">
+										<h4>Analista de Sistemas de TI</h4>
+										<span class="sub-role-date">Jul de 2025 — Mai de 2026</span>
+									</div>
+									<p class="sub-role-desc">
+										Sustentação de produtos, suporte técnico a incidentes e dúvidas de usuários, elaboração de
+										treinamentos e registro de melhorias contínuas no backlog de desenvolvimento.
+									</p>
+								</div>
+							</div>
+						</div>
+					</article>
+
+					<!-- 02 Braga Soluções em TI -->
+					<article class="timeline-item">
+						<div>
+							<h3 class="timeline-company">Braga Soluções em TI</h3>
+							<p class="timeline-date">2023 — 2024</p>
+						</div>
+						<div class="timeline-content">
+							<h3>Analista de Sistemas de TI</h3>
+							<p>
+								Garantia do funcionamento adequado dos produtos desenvolvidos pelo time, atuando junto
+								aos usuários na identificação e resolução de problemas técnicos, dúvidas e incidentes
+								críticos. Atendimento a chamados dos usuários internos de sistema, registrando melhorias
+								e correções no backlog de desenvolvimento.
+							</p>
+						</div>
+					</article>
+
+					<!-- 03 Greenbrier Maxion -->
+					<article class="timeline-item">
+						<div>
+							<h3 class="timeline-company">Greenbrier Maxion</h3>
+							<p class="timeline-date">2023</p>
+						</div>
+						<div class="timeline-content">
+							<h3>Desenvolvedor de Sistemas</h3>
+							<p>
+								Atuação em TI industrial e Indústria 4.0 na planta fabril, integrando sistemas de
+								automação de solda/corte e sustentando módulos do ERP corporativo. Suporte a softwares de
+								alta performance de engenharia de produto e criação de dashboards em BI para otimização
+								de custos e acompanhamento de metas operacionais.
+							</p>
+						</div>
+					</article>
+
+					<!-- 04 Faculdade Adventista do Paraná -->
+					<article class="timeline-item">
+						<div>
+							<h3 class="timeline-company">Faculdade Adventista do Paraná</h3>
+							<p class="timeline-date">2022 — 2023</p>
+						</div>
+						<div class="timeline-content">
+							<h3>Desenvolvedor Web</h3>
+							<p>
+								Desenvolvimento e sustentação de portais e landing pages utilizando WordPress,
+								Elementor, HTML5, PHP e JavaScript. Integração de aplicações internas com ASP.NET,
+								configuração de servidores web (.htaccess, php.ini) e automações de marketing com RD
+								Station.
+							</p>
+						</div>
+					</article>
+
+					<!-- 05 Promac Equipamentos -->
+					<article class="timeline-item">
+						<div>
+							<h3 class="timeline-company">Promac Equipamentos Ltda</h3>
+							<p class="timeline-date">2020 — 2022</p>
+						</div>
+						<div class="timeline-content">
+							<h3>Analista de Sistemas de TI</h3>
+							<p>
+								Análise e configuração de DNS, apontamentos de domínio e gestão de protocolos de e-mail
+								(POP3, IMAP e Exchange em diferentes versões e provedores). Suporte e emissão de
+								Certificados Digitais SSL/TLS (Let's Encrypt, Wildcard, SSL OV) e administração de
+								bancos de dados MySQL, SQL Server e PostgreSQL.
+							</p>
+						</div>
+					</article>
+
+					<!-- 06 UNICAMP -->
+					<article class="timeline-item">
+						<div>
+							<h3 class="timeline-company">UNICAMP</h3>
+							<p class="timeline-date">2019 — 2020</p>
+						</div>
+						<div class="timeline-content">
+							<h3>Desenvolvedor Front-end</h3>
+							<p>
+								Criação de novas telas e funcionalidades utilizando HTML, CSS, JavaScript e React.js no
+								sistema acadêmico Sigaweb. Consultas estruturadas em banco de dados MySQL, criação de
+								stored procedures, modelagem de dados e suporte técnico especializado aos usuários.
+							</p>
+						</div>
+					</article>
+
+				</div>
+
+				<!-- Formação Acadêmica -->
+				<div class="education">
+					<h3 class="resume-subtitle">
+						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+							<path d="M6 12v5c3 3 9 3 12 0v-5" />
+						</svg>
+						Formação acadêmica
+					</h3>
+
+					<!-- Pós Engenharia de Software -->
+					<div class="education-row">
+						<div>
+							<p class="education-institution">Faculdade Metropolitana</p>
+							<p class="education-period">2021 — 2022</p>
+						</div>
+						<div class="education-details">
+							<h3>Pós-Graduação MBA: Engenharia de Software</h3>
+							<p>
+								Especialização voltada à arquitetura de software, desenvolvimento, manutenção e boas
+								práticas de gerência ágil de projetos e sistemas escaláveis.
+							</p>
+							<a class="doc-link" href="engenharia_software.pdf" target="_blank"
+								rel="noopener noreferrer">
+								Visualizar Certificado de Pós-Graduação &nbsp; ↗
+							</a>
+						</div>
+					</div>
+
+					<!-- Pós Ciência de Dados -->
+					<div class="education-row">
+						<div>
+							<p class="education-institution">Faculdade Metropolitana</p>
+							<p class="education-period">2020 — 2022</p>
+						</div>
+						<div class="education-details">
+							<h3>Pós-Graduação: Ciência de Dados e Big Data Analytics</h3>
+							<p>
+								Domínio de metodologias e frameworks analíticos para trabalho com diferentes fontes de
+								dados, traduzindo grandes volumes de dados em decisões efetivas de negócio.
+							</p>
+							<a class="doc-link" href="banco_de_dados.pdf" target="_blank" rel="noopener noreferrer">
+								Visualizar Certificado de Pós-Graduação &nbsp; ↗
+							</a>
+						</div>
+					</div>
+
+					<!-- Graduação UNASP -->
+					<div class="education-row">
+						<div>
+							<p class="education-institution">FAH - UNASP Hortolândia</p>
+							<p class="education-period">2016 — 2020</p>
+						</div>
+						<div class="education-details">
+							<h3>Graduação em Sistemas de Informação</h3>
+							<p>
+								Centro Universitário Adventista de São Paulo, Campus Hortolândia. Título do Trabalho de
+								Conclusão de Curso (TCC): <em>"Testes de Software Abordando Técnicas de Desenvolvimento
+									TDD"</em>.
+							</p>
+							<a class="doc-link" href="diploma.png" target="_blank" rel="noopener noreferrer">
+								Visualizar Diploma de Graduação &nbsp; ↗
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Certificações Técnicas -->
+				<div class="certifications-section">
+					<h3 class="resume-subtitle">
+						<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+						</svg>
+						Certificações técnicas
+					</h3>
+
+					<div class="certifications-grid">
+						<div class="cert-card">
+							<h4>Projetos de Sistemas</h4>
+							<span>2020 · Metodologias &amp; DFD</span>
+							<a class="cert-link" href="sistema.png" target="_blank" rel="noopener noreferrer">Visualizar
+								certificado &nbsp; ↗</a>
+						</div>
+						<div class="cert-card">
+							<h4>HTML5 e CSS3</h4>
+							<span>2021 · Desenvolvimento Web</span>
+							<a class="cert-link" href="html.png" target="_blank" rel="noopener noreferrer">Visualizar
+								certificado &nbsp; ↗</a>
+						</div>
+						<div class="cert-card">
+							<h4>C# Avançado</h4>
+							<span>2014 · Aplicações &amp; Software</span>
+							<a class="cert-link" href="c.png" target="_blank" rel="noopener noreferrer">Visualizar
+								certificado &nbsp; ↗</a>
+						</div>
+						<div class="cert-card">
+							<h4>Lógica de Programação</h4>
+							<span>2021 · Algoritmos &amp; Resolução</span>
+							<a class="cert-link" href="logica.png" target="_blank" rel="noopener noreferrer">Visualizar
+								certificado &nbsp; ↗</a>
+						</div>
+						<div class="cert-card">
+							<h4>JavaScript</h4>
+							<span>2021 · Programação Dinâmica</span>
+							<a class="cert-link" href="javascript.png" target="_blank"
+								rel="noopener noreferrer">Visualizar certificado &nbsp; ↗</a>
+						</div>
+					</div>
+				</div>
+
+				<!-- Idiomas -->
+				<div class="languages">
+					<h3>Idiomas</h3>
+					<p><strong>Português</strong> · Nativo / Fluente</p>
+					<p><strong>Inglês Técnico</strong> · Leitura e compreensão técnica para documentação e
+						desenvolvimento</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Stack (Grid Editorial Tecnológico) -->
+		<section id="stack" class="section stack-section reveal" aria-labelledby="stack-title">
+			<div class="wrap stack-layout">
+
+				<!-- Coluna Esquerda: Título e Tecnologias Principais -->
+				<div class="stack-intro">
+					<p class="eyebrow">Tecnologias</p>
+					<h2 id="stack-title">STACK</h2>
+					<span class="stack-rule" aria-hidden="true"></span>
+					<p class="stack-summary">
+						Minha especialidade é o desenvolvimento full stack, engenharia de software e integração entre
+						sistemas. Estas são as principais tecnologias e competências que utilizo no dia a dia.
+					</p>
+
+					<p class="stack-label">Competências principais</p>
+					<ul class="stack-primary" aria-label="Competências principais">
+						<li>PHP</li>
+						<li>Laravel</li>
+						<li>JavaScript</li>
+						<li>TypeScript</li>
+						<li>React.js</li>
+						<li>WordPress</li>
+						<li>PostgreSQL</li>
+						<li>MySQL</li>
+						<li>Python</li>
+						<li>SharePoint</li>
+						<li>Pipefy</li>
+						<li>Docker</li>
+						<li>Linux</li>
+						<li>Git</li>
+						<li>CI/CD</li>
+					</ul>
+				</div>
+
+				<!-- Coluna Direita: Linhas Editoriais Numeradas -->
+				<ol class="stack-list">
+
+					<!-- 01 Backend -->
+					<li class="stack-row">
+						<span class="stack-index" aria-hidden="true">01</span>
+						<span class="stack-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+								stroke-linecap="round" stroke-linejoin="round">
+								<path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-13-2 16" />
+							</svg>
+						</span>
+						<div>
+							<h3>Backend &amp; APIs</h3>
+							<p>
+								Desenvolvimento de APIs RESTful estruturadas, serviços web, integrações de sistemas de
+								pagamentos e dados, e manutenção de aplicações de alta performance.
+							</p>
+							<p class="stack-technologies">
+								PHP · Laravel · Python · ASP.NET · APIs RESTful · JSON · Microsserviços
+							</p>
+							<p class="stack-case">
+								<span class="stack-case-label">Caso Real</span>
+								Arquitetura de APIs corporativas no Grupo Assist com autenticação segura, processamento assíncrono em fila e integração com sistemas legados.
+							</p>
+						</div>
+					</li>
+
+					<!-- 02 Frontend -->
+					<li class="stack-row">
+						<span class="stack-index" aria-hidden="true">02</span>
+						<span class="stack-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+								stroke-linecap="round" stroke-linejoin="round">
+								<rect x="3" y="4" width="18" height="13" rx="1" />
+								<path d="M8 21h8m-4-4v4M6 14h12" />
+							</svg>
+						</span>
+						<div>
+							<h3>Frontend &amp; Aplicações Web</h3>
+							<p>
+								Desenvolvimento de interfaces de usuário dinâmicas, acessíveis e responsivas, com foco
+								em usabilidade e consumo ágil de APIs.
+							</p>
+							<p class="stack-technologies">
+								React.js · JavaScript (ES6+) · TypeScript · HTML5 · CSS3 · WordPress · Elementor
+							</p>
+							<p class="stack-case">
+								<span class="stack-case-label">Caso Real</span>
+								Construção de SPAs, portais e soluções modulares nas plataformas KLASSE e RACHI com React/Next.js, TypeScript e UX fluida.
+							</p>
+						</div>
+					</li>
+
+					<!-- 03 Bancos de dados -->
+					<li class="stack-row">
+						<span class="stack-index" aria-hidden="true">03</span>
+						<span class="stack-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+								stroke-linecap="round" stroke-linejoin="round">
+								<ellipse cx="12" cy="5" rx="7" ry="3" />
+								<path d="M5 5v14c0 4 14 4 14 0V5M5 12c0 4 14 4 14 0" />
+							</svg>
+						</span>
+						<div>
+							<h3>Bancos de Dados</h3>
+							<p>
+								Modelagem relacional, estruturação de tabelas, criação de stored procedures, otimização
+								de índices e consultas analíticas para apoio à tomada de decisão.
+							</p>
+							<p class="stack-technologies">
+								PostgreSQL · MySQL · SQL Server · MongoDB · Modelagem de Dados
+							</p>
+							<p class="stack-case">
+								<span class="stack-case-label">Caso Real</span>
+								Modelagem transacional relacional para sistemas financeiros com integridade ACID e consultas SQL otimizadas para relatórios analíticos em tempo hábil.
+							</p>
+						</div>
+					</li>
+
+					<!-- 04 Sistemas & Automação -->
+					<li class="stack-row">
+						<span class="stack-index" aria-hidden="true">04</span>
+						<span class="stack-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+								stroke-linecap="round" stroke-linejoin="round">
+								<path
+									d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+							</svg>
+						</span>
+						<div>
+							<h3>Sistemas &amp; Automação de Fluxos</h3>
+							<p>
+								Gestão, sustentação e automação de esteiras de trabalho corporativas, integrações no
+								Microsoft 365 e gestão eficiente de backlogs.
+							</p>
+							<p class="stack-technologies">
+								SharePoint · Pipefy · Jira · Wrike · Microsoft 365 · Google Workspace
+							</p>
+							<p class="stack-case">
+								<span class="stack-case-label">Caso Real</span>
+								Estruturação de fluxos operacionais automatizados com Pipefy e SharePoint no Grupo Assist, eliminando gargalos manuais e ampliando a rastreabilidade interna.
+							</p>
+						</div>
+					</li>
+
+					<!-- 05 Infra & Servidores -->
+					<li class="stack-row">
+						<span class="stack-index" aria-hidden="true">05</span>
+						<span class="stack-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+								stroke-linecap="round" stroke-linejoin="round">
+								<path d="M7 18h11a4 4 0 0 0 0-8h-1a6 6 0 0 0-11-2 5 5 0 0 0 1 10Z" />
+							</svg>
+						</span>
+						<div>
+							<h3>Infraestrutura &amp; Suporte</h3>
+							<p>
+								Configuração de ambientes, apontamentos e entradas DNS, emissão e configuração de
+								certificados digitais SSL/TLS e suporte técnico avançado.
+							</p>
+							<p class="stack-technologies">
+								Linux · Windows Server · Docker · Git · DNS · SSL/TLS · Servidores Web (.htaccess)
+							</p>
+							<p class="stack-case">
+								<span class="stack-case-label">Caso Real</span>
+								Configuração de ambientes Linux/Docker, esteiras Git CI/CD, apontamentos DNS com zero downtime e gestão de certificados SSL em produção.
+							</p>
+						</div>
+					</li>
+
+					<!-- 06 Engenharia de Software -->
+					<li class="stack-row">
+						<span class="stack-index" aria-hidden="true">06</span>
+						<span class="stack-icon" aria-hidden="true">
+							<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"
+								stroke-linecap="round" stroke-linejoin="round">
+								<path d="m12 3 8 3v6c0 5-8 9-8 9s-8-4-8-9V6l8-3Z" />
+								<path d="m8 12 3 3 5-6" />
+							</svg>
+						</span>
+						<div>
+							<h3>Engenharia &amp; Qualidade</h3>
+							<p>
+								Decisões de arquitetura orientadas a boas práticas, aplicação de TDD, realização de
+								revisões de código, documentação e processos de deploy.
+							</p>
+							<p class="stack-technologies">
+								Arquitetura de Software · TDD · Testes de Integração · Code Review · Metodologias Ágeis
+							</p>
+							<p class="stack-case">
+								<span class="stack-case-label">Caso Real</span>
+								Aplicação contínua de Clean Code, code reviews rigorosos, cobertura de testes automatizados e rituais ágeis (Scrum/Kanban) em times multidisciplinares.
+							</p>
+						</div>
+					</li>
+
+				</ol>
+			</div>
+		</section>
+
+		<!-- Contato -->
+		<section id="contato" class="section contact reveal" aria-labelledby="contact-title">
+			<div class="wrap">
+				<p class="eyebrow">Contato</p>
+				<h2 class="section-title" id="contact-title">Estou à disposição para novos desafios</h2>
+
+				<div class="actions">
+					<a href="https://wa.me/5519953248420" class="btn primary" target="_blank" rel="noopener noreferrer">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path
+								d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+						</svg>
+						Conversar no WhatsApp
+					</a>
+					<a class="btn" href="mailto:casimirogundja@outlook.com">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+							<polyline points="22,6 12,13 2,6" />
+						</svg>
+						Enviar e-mail
+					</a>
+					<a href="https://www.linkedin.com/in/casimiro-cust%C3%B3dio-101770106/" class="btn" target="_blank"
+						rel="noopener noreferrer">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+							<path
+								d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+						</svg>
+						Conectar no LinkedIn
+					</a>
+					<a class="btn" href="casimiro_custodio.pdf" target="_blank" rel="noopener noreferrer">
+						<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+							stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+							<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+							<polyline points="14 2 14 8 20 8" />
+							<line x1="16" y1="13" x2="8" y2="13" />
+							<line x1="16" y1="17" x2="8" y2="17" />
+							<polyline points="10 9 9 9 8 9" />
+						</svg>
+						Visualizar Currículo
+					</a>
+				</div>
+
+				<div class="contact-info">
+					<span>Hortolândia - SP, Brasil</span>
+					<a href="mailto:casimirogundja@outlook.com">casimirogundja@outlook.com</a>
+					<a href="tel:+5519953248420">(19) 95324-8420</a>
+				</div>
+			</div>
+		</section>
+
+	</main>
+
+	<!-- Rodapé -->
+	<footer>
+		<div class="wrap footer-inner">
+			<p>
+				© <span id="year">2026</span> Casimiro Custódio Gundja. Todos os direitos reservados.
+			</p>
+			<div class="social-links">
+				<a href="https://www.linkedin.com/in/casimiro-cust%C3%B3dio-101770106/" target="_blank"
+					rel="noopener noreferrer">
+					<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path
+							d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+					</svg>
+					LinkedIn
+				</a>
+				<a href="https://wa.me/5519953248420" target="_blank" rel="noopener noreferrer">
+					<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path
+							d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+					</svg>
+					WhatsApp
+				</a>
+				<a href="https://www.instagram.com/casimiro_custodio/" target="_blank" rel="noopener noreferrer">
+					<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path
+							d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+					</svg>
+					Instagram
+				</a>
+				<a href="https://www.facebook.com/casimirogundja/" target="_blank" rel="noopener noreferrer">
+					<svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+						<path
+							d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+					</svg>
+					Facebook
+				</a>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Botão de Voltar ao Topo -->
+	<a class="back-top" href="#top" aria-label="Voltar ao topo">↑</a>
+
+	<!-- Script Moderno Nativo -->
+	<script src="script.js"></script>
+
 </body>
+
 </html>

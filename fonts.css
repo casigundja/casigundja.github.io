@@ -1,0 +1,59 @@
+/* Load fonts dynamically from Google Fonts API */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Alias mapping to Google Fonts to support the template variables */
+@font-face {
+    font-family: 'lora-bold';
+    src: local('Lora Bold'), local('Lora-Bold'), url('https://fonts.gstatic.com/s/lora/v32/0QIgMX1D_BoXwT77xem-7mvx.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'lora-bold-italic';
+    src: local('Lora Bold Italic'), local('Lora-BoldItalic'), url('https://fonts.gstatic.com/s/lora/v32/0QIiMX1D_BoXwT7b9Oq-z2vy5Fs.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'lora-italic';
+    src: local('Lora Italic'), local('Lora-Italic'), url('https://fonts.gstatic.com/s/lora/v32/0QI8MX1D_BoXwT3yKOCs.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'lora-regular';
+    src: local('Lora Regular'), local('Lora-Regular'), url('https://fonts.gstatic.com/s/lora/v32/0QI6MX1D_BoXwT38EOC9.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins-bold';
+    src: local('Poppins Bold'), local('Poppins-Bold'), url('https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLCz7Z1xlEw.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins-light';
+    src: local('Poppins Light'), local('Poppins-Light'), url('https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLDD4Z1xlEw.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins-medium';
+    src: local('Poppins Medium'), local('Poppins-Medium'), url('https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLGT9Z1xlEw.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins-regular';
+    src: local('Poppins Regular'), local('Poppins-Regular'), url('https://fonts.gstatic.com/s/poppins/v21/pxiEyp8kv8JHgFVrJJbecnE.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppins-semibold';
+    src: local('Poppins SemiBold'), local('Poppins-SemiBold'), url('https://fonts.gstatic.com/s/poppins/v21/pxiByp8kv8JHgFVrLEj6Z1xlEw.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
