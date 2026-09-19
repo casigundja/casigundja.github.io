@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Casigundja — projetos, habilidades e formas de contato.">
+  <title>Casigundja | Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="brand" href="#inicio" aria-label="Início">casigundja<span>.</span></a>
+      <button class="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+      <div class="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#habilidades">Habilidades</a>
+        <a class="nav-cta" href="#contato">Vamos conversar <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> Disponível para novos projetos</p>
+        <h1>Transformo ideias em experiências <em>digitais.</em></h1>
+        <p class="hero-text">Olá, eu sou Casigundja. Este é o meu espaço para compartilhar projetos, aprendizados e tudo o que estou construindo na tecnologia.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Ver meus projetos <span>↓</span></a>
+          <a class="button button-ghost" href="https://github.com/casigundja" target="_blank" rel="noreferrer">GitHub <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="code-card"><span class="code-comment">// criando o próximo projeto</span><br><span class="code-key">const</span> <span class="code-name">ideia</span> = <span class="code-string">"possível"</span>;<br><span class="code-key">return</span> <span class="code-name">ideia</span>;</div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section container split-section">
+      <div class="section-label"><span>01</span><span class="line"></span><span>Sobre mim</span></div>
+      <div class="section-content">
+        <h2>Curioso por natureza,<br><strong>criador por escolha.</strong></h2>
+        <p>Gosto de aprender fazendo: entender problemas, explorar possibilidades e criar soluções simples, úteis e bonitas. Aqui você encontra um pouco da minha jornada e dos projetos que representam esse caminho.</p>
+        <p>Este portfólio está em constante evolução — assim como eu.</p>
+      </div>
+    </section>
+
+    <section id="projetos" class="section projects-section">
+      <div class="container">
+        <div class="section-label"><span>02</span><span class="line"></span><span>Projetos</span></div>
+        <div class="section-heading"><h2>O que estou <strong>construindo.</strong></h2><a href="https://github.com/casigundja?tab=repositories" target="_blank" rel="noreferrer">Ver todos no GitHub ↗</a></div>
+        <div class="project-grid">
+          <article class="project-card project-featured"><div class="project-number">01</div><div><p class="project-type">Portfólio pessoal</p><h3>Meu espaço na web</h3><p>Uma página para apresentar meus projetos, habilidades e minha evolução profissional.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div><a class="project-arrow" href="https://github.com/casigundja/casigundja.github.io" target="_blank" rel="noreferrer" aria-label="Ver código do portfólio">↗</a></article>
+          <article class="project-card"><div class="project-number">02</div><div><p class="project-type">Em breve</p><h3>Próximo projeto</h3><p>Um novo projeto está a caminho. Volte em breve para acompanhar as novidades.</p><div class="tags"><span>Em construção</span></div></div><span class="project-arrow muted">✦</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="habilidades" class="section container split-section skills-section">
+      <div class="section-label"><span>03</span><span class="line"></span><span>Habilidades</span></div>
+      <div class="section-content"><h2>Ferramentas para<br><strong>tirar ideias do papel.</strong></h2><div class="skill-list"><span>HTML & CSS</span><span>JavaScript</span><span>Git & GitHub</span><span>Design responsivo</span><span>Aprendizado contínuo</span></div></div>
+    </section>
+
+    <section id="contato" class="contact-section"><div class="container contact-inner"><p class="eyebrow">04 — Contato</p><h2>Tem uma ideia?<br><em>Vamos conversar.</em></h2><p>Estou sempre aberto a conhecer pessoas e projetos interessantes.</p><a class="button button-primary" href="https://github.com/casigundja" target="_blank" rel="noreferrer">Falar comigo no GitHub ↗</a></div></section>
+  </main>
+
+  <footer class="footer container"><span>© <span id="year"></span> Casigundja</span><span>Feito com curiosidade e código.</span><a href="#inicio">Voltar ao topo ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
