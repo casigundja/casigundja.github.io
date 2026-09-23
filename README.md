@@ -1,17 +1,12 @@
 <p align="center">
-  <img src="./banner.svg" alt="Casimiro Gundja — Desenvolvedor Full Stack">
+  <img src="./banner.svg" alt="Casimiro Gundja — Desenvolvedor Full Stack" width="100%">
 </p>
+
 <p align="center">
-  <a href="https://casigundja.github.io/">
-    <img src="https://img.shields.io/badge/Website-casigundja.github.io-0284c7?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website">
-  </a>
-  <a href="https://www.linkedin.com/in/casimiro-custodio-101770106/">
-    <img src="https://img.shields.io/badge/LinkedIn-Casimiro_Custódio-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn">
-  </a>
-  <a href="mailto:casimirogundja@outlook.com">
-    <img src="https://img.shields.io/badge/Email-casimirogundja@outlook.com-0078D4?style=for-the-badge&logo=microsoftoutlook&logoColor=white" alt="Email">
-  </a>
-  <img src="https://img.shields.io/badge/Hortolândia_--_SP-Brasil-1f6feb?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Hortolândia - SP, Brasil">
+  <a href="https://casigundja.github.io/"><img src="https://img.shields.io/badge/WEBSITE-CONHECER-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"></a>
+  <a href="https://www.linkedin.com/in/casimiro-custodio-101770106/"><img src="https://img.shields.io/badge/LINKEDIN-CONECTAR-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+  <img src="https://img.shields.io/badge/%F0%9F%93%8D-HORTOL%C3%82NDIA%2C%20SP-334155?style=for-the-badge" alt="Hortolândia, São Paulo">
+  <img src="https://img.shields.io/badge/BRASIL-1D4ED8?style=for-the-badge" alt="Brasil">
 </p>
 
 ## Sobre mim
@@ -27,15 +22,15 @@ Minha experiência abrange o desenvolvimento de ponta a ponta: backend sólido c
 <table>
   <tr>
     <td width="33%" valign="top">
-      <strong>⚙️ Backend, APIs e Integrações</strong><br><br>
+      <strong>⚙️ Backend e integrações</strong><br><br>
       APIs RESTful, microsserviços, automações de processos de negócio, mensageria e comunicação entre sistemas distribuídos.
     </td>
     <td width="33%" valign="top">
-      <strong>🏗️ Arquitetura e Qualidade</strong><br><br>
+      <strong>🏗️ Arquitetura e qualidade</strong><br><br>
       Clean Code, SOLID, modelagem relacional de dados, code review, boas práticas de engenharia e foco em estabilidade.
     </td>
     <td width="33%" valign="top">
-      <strong>☁️ DevOps, Cloud e Frontend</strong><br><br>
+      <strong>☁️ Operação e entrega</strong><br><br>
       Containers Docker, Azure Cloud, esteiras de integração contínua (CI/CD) e interfaces dinâmicas com React e TypeScript.
     </td>
   </tr>
